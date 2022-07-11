@@ -1,0 +1,263 @@
+/* ==============================
+        common css start
+   ============================== */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a,
+a:focus,
+a:hover {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.zakat-flex-space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zakat-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input:focus{
+    border: 0;
+}
+input:focus-visible{
+    border: 0;
+}
+/* ==============================
+        common css start
+   ============================== */
+/* ==============================
+        typography css start
+   ============================== */
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 48px;
+    color: #000000;
+}
+
+.logo span {
+    color: #fff;
+}
+
+.nav-iteams {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #000000;
+}
+
+.main-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 62px;
+    font-weight: 600;
+    line-height: 70px;
+    color: #fff;
+
+}
+.sub-heading3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #000000;
+}
+
+.pragraph {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.footer-pragraph {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    font-weight: 400;
+}
+.footer-navlinks{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom:10px ;
+}
+.footer-small {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    color: #ffffff;
+    font-weight: 400;
+}
+.zakat-input{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #f5f5f5;
+    background: #ffffff;
+    border: none;
+    padding: 0 10px;
+
+    
+}
+/* ==============================
+        typography css end
+   ============================== */
+/* ==============================
+        buttons css start
+   ============================== */
+.zakat-btn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    background-color: #fac229;
+    color: #fff;
+    padding: 0 20px;
+    height: 50px;
+
+}
+.subscribe-btn{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    background-color:#000000;
+    color: #fff;
+    padding: 13px 25px;
+}
+/* ==============================
+        buttons css end
+   ============================== */
+
+/* ==============================
+        header css start
+   ============================== */
+
+header {
+
+
+    padding-bottom: 100px;
+
+}
+
+header nav {
+    background: #ffffff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav .zakat-logo span {
+    background: #fac42b;
+    padding: 0 5px;
+
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+header nav ul li a{
+    transition: .4s;
+    position: relative;
+}
+header nav ul li a:after{
+   width: 0%;
+   height: 3px;
+   background: #fac42b;
+   position: absolute;
+   bottom: -5px;
+   left: 0;
+   content: '';
+   transition: .4s;
+}
+header nav ul li a:hover{
+    color: #fac42b;
+}
+header nav ul li a:hover::after{
+    width: 100%;
+}
+header .hero-part {
+    background: url(../images/banner.png ) no-repeat center;
+    background-size: cover;
+    padding: 200px 0;
+}
+
+header .hero-part h1 {
+    margin-bottom: 20px;
+}
+
+header .hero-part p {
+    width: 500px;
+}
+
+header .hero-part a {
+    margin-top: 30px;
+}
+
+/* ==============================
+        header css end
+   ============================== */
+/* ==============================
+        footer css start
+   ============================== */
+   footer .footer-main{
+    display: flex;
+    justify-content: space-between;
+   }
+footer .footer-top {
+    background: rgba(250, 196, 43, 0.8);
+}
+
+footer .footer-top .footer-left a {
+
+    margin-bottom: 20px;
+}
+
+footer .footer-top .footer-left {
+    width: 300px;
+}
+
+footer .footer-top .footer-center h4{
+   margin-bottom: 20px;
+}
+
+footer .footer-top .footer-right input{
+    height: 50px;
+    width: 300px;
+}
+footer .footer-bototm {
+    background: #000000;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==============================
+        footer css end
+   ============================== */
