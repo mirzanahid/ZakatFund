@@ -35,12 +35,6 @@ a:hover {
     align-items: center;
 }
 
-input:focus{
-    border: 0;
-}
-input:focus-visible{
-    border: 0;
-}
 /* ==============================
         common css start
    ============================== */
@@ -62,7 +56,7 @@ input:focus-visible{
 .nav-iteams {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 24px;
     color: #000000;
 }
@@ -73,13 +67,29 @@ input:focus-visible{
     font-weight: 600;
     line-height: 70px;
     color: #fff;
-
 }
-.sub-heading3{
+
+.sub-heading-2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 34px;
+    color: #000000;
+}
+
+.sub-heading3 {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: 600;
     line-height: 28px;
+    color: #000000;
+}
+
+.card-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 34px;
     color: #000000;
 }
 
@@ -91,6 +101,14 @@ input:focus-visible{
     font-weight: 400;
 }
 
+.card-pragraph {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #f5f5f5;
+    font-weight: 400;
+}
+
 .footer-pragraph {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -98,14 +116,15 @@ input:focus-visible{
     color: #000000;
     font-weight: 400;
 }
-.footer-navlinks{
+
+.footer-navlinks {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
     color: #000000;
-    margin-bottom:10px ;
 }
+
 .footer-small {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
@@ -113,16 +132,15 @@ input:focus-visible{
     color: #ffffff;
     font-weight: 400;
 }
-.zakat-input{
+
+.zakat-input {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: #f5f5f5;
     background: #ffffff;
     border: none;
-    padding: 0 10px;
-
-    
 }
+
 /* ==============================
         typography css end
    ============================== */
@@ -136,19 +154,36 @@ input:focus-visible{
     font-weight: 500;
     background-color: #fac229;
     color: #fff;
-    padding: 0 20px;
-    height: 50px;
+    padding: 15px 25px;
+    transition: .4s;
 
 }
-.subscribe-btn{
+
+.zakat-btn:hover {
+    background: #000000;
+    color: #fac42b;
+
+}
+
+.subscribe-btn {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 20px;
     font-weight: 500;
-    background-color:#000000;
+    background-color: #000000;
     color: #fff;
-    padding: 13px 25px;
+    padding: 0 25px;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: .4s;
 }
+.subscribe-btn:hover{
+    background: #fff;
+    color: #000;
+    
+}
+
 /* ==============================
         buttons css end
    ============================== */
@@ -158,10 +193,7 @@ input:focus-visible{
    ============================== */
 
 header {
-
-
-    padding-bottom: 100px;
-
+    padding-bottom: 80px;
 }
 
 header nav {
@@ -174,33 +206,37 @@ header nav {
 header nav .zakat-logo span {
     background: #fac42b;
     padding: 0 5px;
-
 }
 
 header nav ul li {
     display: inline-block;
     margin: 0 10px;
 }
-header nav ul li a{
+
+header nav ul li a {
     transition: .4s;
     position: relative;
 }
-header nav ul li a:after{
-   width: 0%;
-   height: 3px;
-   background: #fac42b;
-   position: absolute;
-   bottom: -5px;
-   left: 0;
-   content: '';
-   transition: .4s;
+
+header nav ul li a:after {
+    width: 0%;
+    height: 3px;
+    background: #fac42b;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    content: '';
+    transition: .4s;
 }
-header nav ul li a:hover{
+
+header nav ul li a:hover {
     color: #fac42b;
 }
-header nav ul li a:hover::after{
+
+header nav ul li a:hover::after {
     width: 100%;
 }
+
 header .hero-part {
     background: url(../images/banner.png ) no-repeat center;
     background-size: cover;
@@ -222,19 +258,176 @@ header .hero-part a {
 /* ==============================
         header css end
    ============================== */
+/* main sections start */
+
+/* ==============================
+        about-us css start
+   ============================== */
+#about-us {
+    padding-bottom: 80px;
+}
+
+#about-us .about-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+#about-us .about-main .about-image {
+    width: 400px;
+    height: 500px;
+}
+
+#about-us .about-main .about-image img {
+    width: 100%;
+    height: 100%;
+}
+
+#about-us .about-main .about-text {
+    width: 50%;
+    padding-top: 70px;
+}
+
+#about-us .about-main .about-text h2 {
+    margin-bottom: 40px;
+}
+
+#about-us .about-main .about-text p {
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+/* ==============================
+        about-us css end
+   ============================== */
+/* ==============================
+        programs css start
+   ============================== */
+
+#programs {
+    padding-bottom: 80px;
+}
+
+#programs .program-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+#programs .program-main .card {
+    background: #fff;
+    width: 25%;
+    padding: 15px 15px 15px 15px;
+    transition: .4s;
+}
+
+#programs .program-main .card .card-icons i {
+    font-size: 52px;
+    color: #fac42b;
+    margin-bottom: 15px;
+    transition: .4s;
+}
+
+#programs .program-main .card h3 {
+    color: #000000;
+    margin-bottom: 10px;
+    transition: .4s;
+}
+
+#programs .program-main .card p {
+    color: gray;
+    transition: .4s;
+}
+
+#programs .program-main .card a {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ffffff;
+    color: #ffffff;
+    transition: .4s;
+}
+
+#programs .program-main .card:hover {
+    background: #fac42b;
+}
+
+#programs .program-main .card:hover i {
+    color: #000000;
+}
+
+#programs .program-main .card:hover h3 {
+    color: #ffffff;
+}
+
+#programs .program-main .card:hover p {
+    color: #000000;
+}
+
+#programs .program-main .card:hover a {
+    background: #000000;
+
+}
+
+#programs .program-main .card a:hover {
+    color: #fac42b;
+}
+
+/* ==============================
+        programs css end
+   ============================== */
+/* ==============================
+        slider css start
+   ============================== */
+
+#slider .slider-main ul {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#slider .slider-main ul li {
+    width: 16.67%;
+    height: 200px;
+    position: relative;
+}
+
+#slider .slider-main ul li img {
+    width: 100%;
+    height: 100%;
+}
+#slider .slider-main ul li .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+    transition: .4s;
+
+}
+#slider .slider-main ul li:hover .overlay{
+    display: block;
+}
+/* ==============================
+        slider css end
+   ============================== */
+/* main sections end */
 /* ==============================
         footer css start
    ============================== */
-   footer .footer-main{
+
+footer .footer-main {
     display: flex;
     justify-content: space-between;
-   }
+}
+
 footer .footer-top {
-    background: rgba(250, 196, 43, 0.8);
+    background: #fac42b;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 footer .footer-top .footer-left a {
-
     margin-bottom: 20px;
 }
 
@@ -242,14 +435,76 @@ footer .footer-top .footer-left {
     width: 300px;
 }
 
-footer .footer-top .footer-center h4{
-   margin-bottom: 20px;
+footer .footer-top .footer-left .social-icons {
+    margin-top: 40px;
 }
 
-footer .footer-top .footer-right input{
+footer .footer-top .footer-left .social-icons ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer .footer-top .footer-left .social-icons ul li a i {
+    font-size: 22px;
+    color: #000000;
+    width: 25px;
+    height: 25px;
+    background: #f5f5f5;
+    border-radius: 50%;
+    padding: 10px;
+    line-height: 25px;
+    text-align: center;
+    transition: .4s;
+}
+
+footer .footer-top .footer-left .social-icons ul li a i:hover {
+    background: #000000;
+    color: #fff;
+}
+
+footer .footer-top .footer-center {
+    width: 250px;
+}
+
+footer .footer-top .footer-center h4 {
+    margin-bottom: 35px;
+}
+
+footer .footer-top .footer-center .pages {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-top .footer-center .pages ul li a {
+    margin-bottom: 10px;
+    transition: .4s;
+}
+footer .footer-top .footer-center .pages ul li a:hover{
+    color: #fff;
+}
+footer .footer-top .footer-right h4 {
+    margin-bottom: 30px;
+}
+
+footer .footer-top .footer-right p {
+    width: 400px;
+}
+
+footer .footer-top .footer-right form {
+    margin-top: 40px;
+}
+
+footer .footer-top .footer-right input {
     height: 50px;
     width: 300px;
+    padding: 0 10px;
+    border: 0;
 }
+
+footer .footer-top .footer-right input:focus {
+    outline: 0;
+}
+
 footer .footer-bototm {
     background: #000000;
     padding: 20px 0;
